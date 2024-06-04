@@ -36,7 +36,7 @@ public struct AppColors {
         selectedSceneColor(lightColor: Color.blue, darkColor: Color.orange)
     }
     
-    public var KCorange = Color(red: 229, green: 149, blue: 53)
+    public var KCorange = Color(red: 243, green: 146, blue: 0)
 
     
     // MARK: - Private Funtions
