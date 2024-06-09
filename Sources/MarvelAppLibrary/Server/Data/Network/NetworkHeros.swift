@@ -23,7 +23,7 @@ public final class NetworkHeros: NetworkHerosProtocol {
         
         var heros: [Hero] = []
         
-        guard let url = URL(string: "\(ConstApp.API_URL)\(stringEndpoint(endpoint: .heros))\(ConstApp.TS)&\(ConstApp.PUBLIC_KEY)&\(ConstApp.HASH_MD5)") else {
+        guard let url = URL(string: "\(ConstApp.API_URL)\(stringEndpoint(endpoint: .heros))?\(ConstApp.LIMIT)&\(ConstApp.TS)&\(ConstApp.PUBLIC_KEY)&\(ConstApp.HASH_MD5)") else {
             throw NetworkError.malformedURL
         }
         

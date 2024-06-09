@@ -17,8 +17,11 @@ enum EndPoints: String {
 func stringEndpoint(id: Int = 0, endpoint: EndPoints) -> String {
     switch endpoint {
     case .heros:
-        return "/v1/public/characters?"
+        return "/v1/public/characters"
     case .series:
         return "/v1/public/characters/\(String(describing: id))/series"
     }
 }
+
+
+
