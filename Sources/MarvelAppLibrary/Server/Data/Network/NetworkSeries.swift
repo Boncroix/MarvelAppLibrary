@@ -49,3 +49,15 @@ public final class NetworkSeries: NetworkSeriesProtocol {
         return (modelResponse, series)
     }
 }
+
+// MARK: - NetworkSeriesFake
+public final class NetworkSeriesFake: NetworkSeriesProtocol {
+    
+    // MARK: Init
+    public init() {}
+    
+    //MARK: GetSeriesFake
+    public func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie]) {
+        return (SeriesEntryFake, listSeriesFake)
+    }
+}
