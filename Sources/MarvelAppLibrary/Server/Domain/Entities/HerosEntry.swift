@@ -20,14 +20,14 @@ public struct DataClass: Codable {
 }
 
 // MARK: - Result
-public struct Hero: Codable, Identifiable {
+public struct Hero: Codable, Identifiable, Hashable {
     public let id: Int
     public let name, description: String
     public let thumbnail: Thumbnail
 }
 
 // MARK: - Thumbnail
-public struct Thumbnail: Codable {
+public struct Thumbnail: Codable, Hashable {
     public let path: String
     public let thumbnailExtension: Extension
 

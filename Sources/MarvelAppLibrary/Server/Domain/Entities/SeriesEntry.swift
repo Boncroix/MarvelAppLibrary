@@ -18,7 +18,7 @@ public struct DataClassSeries: Codable {
 }
 
 // MARK: - Result
-public struct Serie: Codable, Identifiable {
+public struct Serie: Codable, Identifiable, Hashable {
     public let id: Int
     public let title: String
     public let description: String?
