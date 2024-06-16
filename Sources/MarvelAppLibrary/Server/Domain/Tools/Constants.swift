@@ -13,5 +13,5 @@ struct ConstApp {
     static let PUBLIC_KEY = "apikey=cb1f424079a03dbadf0db56d7b1f9fb7"
     static let TS = "ts=1"
     static let HASH_MD5 = "hash=ea6efdf7e44a8fd40bb6d3363d9e5ad2"
-    static let LIMIT = "limit=50"
+    static let LIMIT = "limit=100"
 }
